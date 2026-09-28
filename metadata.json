@@ -1,0 +1,6 @@
+{
+  "name": "Averion Tech - Portal Akademik TI-3A UMMI",
+  "description": "Website Resmi Mahasiswa Kelas 3A Teknik Informatika Universitas Muhammadiyah Sukabumi (UMMI). Pusat informasi jadwal perkuliahan terpadu, struktur organisasi direktori mahasiswa, dan generator pesan konfirmasi dosen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
