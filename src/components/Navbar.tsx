@@ -55,6 +55,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             Jadwal Kuliah
           </a>
           <a
+            href="#bagi-kelompok"
+            className="text-[#c6c6cd] text-sm font-semibold hover:text-[#4cd7f6] transition-colors flex items-center gap-1.5"
+          >
+            <span>Bagi Kelompok</span>
+            <span className="font-mono text-[9px] px-1.5 py-0.5 rounded bg-[#4edea3]/20 text-[#4edea3] font-bold">SPIN</span>
+          </a>
+          <a
             href="#kontak-pj"
             className="text-[#c6c6cd] text-sm font-semibold hover:text-[#4cd7f6] transition-colors"
           >
@@ -114,6 +121,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="block px-3 py-2 rounded-lg text-[#c6c6cd] hover:text-[#4cd7f6] font-medium"
           >
             Jadwal Kuliah
+          </a>
+          <a
+            href="#bagi-kelompok"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block px-3 py-2 rounded-lg text-[#c6c6cd] hover:text-[#4cd7f6] font-medium"
+          >
+            Bagi Kelompok (Spin)
           </a>
           <a
             href="#kontak-pj"

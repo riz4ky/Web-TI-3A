@@ -8,6 +8,7 @@ import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { ScheduleSection } from './components/ScheduleSection.tsx';
 import { CohortSection } from './components/CohortSection.tsx';
+import { GroupSpinSection } from './components/GroupSpinSection.tsx';
 import { Footer } from './components/Footer.tsx';
 import { WhatsAppModal, ModalInitialData } from './components/WhatsAppModal.tsx';
 import { CourseItem, CoursePJ, DayKey } from './types.ts';
@@ -148,6 +149,9 @@ export default function App() {
           onOpenWhatsAppModalWithPJ={handleOpenPJWhatsApp}
           onOpenDirectLeaderChat={handleOpenLeaderDirectChat}
         />
+
+        {/* Interactive Group Division Spin Wheel */}
+        <GroupSpinSection />
       </main>
 
       {/* Footer */}

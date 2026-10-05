@@ -72,13 +72,11 @@ export const CohortSection: React.FC<CohortSectionProps> = ({
   };
 
   const handleResetPhotos = () => {
-    if (confirm('Kembalikan semua foto mahasiswa ke foto default?')) {
-      setCustomPhotos({});
-      try {
-        localStorage.removeItem('averion_custom_photos');
-      } catch {
-        // ignore
-      }
+    setCustomPhotos({});
+    try {
+      localStorage.removeItem('averion_custom_photos');
+    } catch {
+      // ignore
     }
   };
 

@@ -333,3 +333,31 @@ export const ALL_PJ_OPTIONS = [
   { name: 'Muhammad Widya Triyana', label: 'Muhammad Widya Triyana (Wakil Ketua)' },
   { name: 'Ahmad Gabriel Omar', label: 'Ahmad Gabriel Omar (Sekretaris)' },
 ];
+
+// Data 24 Mahasiswa untuk Fitur Polling Pembagian Kelompok (Spin Wheel)
+export const GROUP_DIV_STUDENTS: string[] = [
+  'Mohamad Arya Zulhaz',
+  'Muhammad Widya Triyana',
+  'Ahmad Gabriel Omar',
+  'Muhammad Pajar',
+  'Raihannisa Fadhilah',
+  'Raden Muhammad Rizky',
+  'Wirayudhabuana Putra',
+  'Muhammad Alif',
+  'Suci Aulia',
+  'Fitria Nur Ramadhani',
+  'Alfhasa Pratama',
+  "Muti’I Khairunnisaa",
+  'Khaila Salinaza',
+  'Fauji',
+  'Muhammad Farell',
+  'M. Zahran Erga',
+  'Saeful Aziz',
+  'Raihan Nafis',
+  'Fauzan Mustopa P',
+  'Wardiansyah Maulana',
+  'Azizah Hadiqatul',
+  'Muhamad Rizki Hidayat',
+  'M. Galih Bintang',
+  'Moch Gian',
+];
