@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenWhatsAppModal }) => {
             (UMMI). All rights reserved.
           </p>
           <span className="font-mono text-xs text-[#909097]">
-            Class Motto: &quot;Innovate, Collaborate, Elevate&quot;
+            Class Motto: BROTHERHOOOD;
           </span>
         </div>
 

@@ -373,11 +373,11 @@ export const GroupSpinSection: React.FC = () => {
 
   // Copy to WhatsApp message
   const handleCopyWhatsApp = () => {
-    let text = `📋 *HASIL PEMBAGIAN KELOMPOK KELAS TI-3A*\n`;
-    text += `*Mata Kuliah / Kegiatan:* ${subjectName}\n`;
-    text += `*Total Mahasiswa:* 24 Orang | *Jumlah Kelompok:* ${numGroups} Kelompok\n`;
-    text += `*Sistem:* Polling Acak Spin Wheel Averion Tech\n`;
-    text += `*Universitas Muhammadiyah Sukabumi*\n\n`;
+    let text = `HASIL PEMBAGIAN KELOMPOK KELAS-3A TI\n`;
+    text += `Mata Kuliah / Kegiatan: ${subjectName}\n`;
+    text += `Total Mahasiswa: 24 Orang | Jumlah Kelompok: ${numGroups} Kelompok\n`;
+    text += `Sistem: Polling Acak Spin Wheel\n`;
+    text += `Universitas Muhammadiyah Sukabumi\n\n`;
 
     groups.forEach((grp, idx) => {
       text += `*👥 KELOMPOK ${idx + 1} (${grp.length} Anggota):*\n`;
@@ -391,7 +391,7 @@ export const GroupSpinSection: React.FC = () => {
       text += `\n`;
     });
 
-    text += `_Dibuat secara adil & transparan melalui Portal TI-3A Averion Tech._`;
+    text += `Dibuat secara adil melalui Portal TI-3A Averion Tech.`;
 
     navigator.clipboard.writeText(text);
     setCopied(true);
@@ -410,11 +410,11 @@ export const GroupSpinSection: React.FC = () => {
           <span>Interactive Spin Polling</span>
         </div>
         <h2 className="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-[#d3e4fe] tracking-tight">
-          Polling Pembagian Kelompok Kuliah
+          Polling Pembagian Kelompok Mata Kuliah
         </h2>
         <p className="text-sm sm:text-base text-[#c6c6cd] mt-2 leading-relaxed">
-          Bagi 24 mahasiswa TI-3A secara adil dan transparan menggunakan model roda putar (*Spin Wheel*).
-          Setiap putaran akan memasukkan mahasiswa terpilih ke kelompok secara bergiliran (Putaran 1 $\rightarrow$ Kelompok 1, Putaran 2 $\rightarrow$ Kelompok 2, dan seterusnya).
+          Pembagian kelompok secara adil dan transparan menggunakan model roda putar.
+          Setiap putaran akan memasukkan mahasiswa yang terpilih ke kelompok secara bergiliran.
         </p>
       </div>
 
@@ -569,7 +569,7 @@ export const GroupSpinSection: React.FC = () => {
                   <div className="text-[#c6c6cd]">Putaran Berhasil:</div>
                   <div className="text-[#d3e4fe] font-bold">
                     {lastSelected.student}{' '}
-                    <span className="text-[#4edea3]">$\rightarrow$ Kelompok {lastSelected.groupNum}</span>
+                    <span className="text-[#4edea3]"> Kelompok {lastSelected.groupNum}</span>
                   </div>
                 </div>
               </div>
@@ -683,7 +683,7 @@ export const GroupSpinSection: React.FC = () => {
             <div className="space-y-1">
               <span className="font-semibold text-[#d3e4fe]">Mekanisme Polling Spin Averion Tech:</span>
               <p className="text-[11px] text-[#909097] leading-relaxed">
-                Setiap kali tombol <b className="text-[#4cd7f6]">Putar Spin</b> ditekan, nama mahasiswa yang terpilih akan langsung dialokasikan ke kelompok target secara berurutan (Kelompok 1 $\rightarrow$ 2 $\rightarrow$ ... $\rightarrow$ Kelompok {numGroups} $\rightarrow$ kembali ke Kelompok 1) sampai seluruh 24 mahasiswa terbagi rata.
+                Setiap kali tombol <b className="text-[#4cd7f6]">Putar Spin</b> ditekan, nama mahasiswa yang terpilih akan langsung dialokasikan ke kelompok target secara berurutan sampai seluruh 24 mahasiswa terbagi rata.
               </p>
             </div>
           </div>
